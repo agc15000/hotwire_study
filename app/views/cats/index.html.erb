@@ -16,6 +16,9 @@
   <%# 検索結果と検索フォームをクリアする %>
   <%= link_to "クリア", cats_path %>
 <% end %>
+<%= sort_link(@search, :name) %>
+<%= sort_link(@search, :age) %>
+
 <div id="cats">
   <% @cats.each do |cat| %>
     <%= render cat %>
