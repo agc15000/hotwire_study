@@ -1,7 +1,7 @@
 <h1>ねこを登録するわん</h1>
-
-<%= render "form", cat: @cat %>
-
+<%= render "modal", title: "登録" do %>
+  <%= render "form", cat: @cat %>
+<% end %>
 <br>
 
 <div>
